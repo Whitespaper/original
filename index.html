@@ -1,6 +1,17 @@
 <html>
 
 <head>
+    <script>
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+
+        document.addEventListener('keydown', function (e) {
+            if (e.keyCode === 123) {
+                e.preventDefault();
+            }
+        });
+    </script>
     <meta charset="UTF-8">
     <title>纪念UKE！</title>
     <link rel="icon" href="https://cdn.luogu.com.cn/upload/image_hosting/it2ueqmo.png" type="image/png">
