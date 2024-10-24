@@ -3,6 +3,13 @@
 <head>
     <script>
         document.addEventListener('keydown', function (event) {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+            }
+        });
+    </script>
+    <script>
+        document.addEventListener('keydown', function (event) {
             if (event.ctrlKey && event.key === 'u') {
                 event.preventDefault();
             }
@@ -127,6 +134,7 @@
         }
     </script>
 </head>
+
 <body>
     <script>NE(); if (ne != 123) tishi()</script>
     <h1>纪念UKE！</h1>
